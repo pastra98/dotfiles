@@ -11,5 +11,5 @@ dir="${HOME}/${dotfiles}"
 
 # loops through listed dotfiles from var, and links it to the home directory where it belongs.
 for dotfile in "${dotfiles[@]}";do
- ln -sf "/home/pauls_big_pc_ubuntu/dotfiles/${dotfile}" "${HOME}"
+ ln -sf "${HOME}/dotfiles/${dotfile}" "${HOME}"
 done
