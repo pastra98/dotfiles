@@ -6,10 +6,10 @@
 # all used dotfiles in one variable.
 dotfiles=".vimrc"
 
-# variable of the path to the directory holding my dotfiles.
-dir="${HOME}/dotfiles"
+# variable of the path where my dotfiles should be (home/usr)
+dir="${HOME}/${dotfiles}"
 
 # loops through listed dotfiles from var, and links it to the home directory where it belongs.
 for dotfile in "${dotfiles[@]}";do
- ln -sf "${HOME}/${dotfile}" "${dir}"
+ ln -sf "/home/pauls_big_pc_ubuntu/dotfiles/${dotfile}" "${HOME}"
 done
