@@ -4,7 +4,7 @@
 # dotfiles variable.
 
 # all used dotfiles in one variable.
-dotfiles=(".vimrc")
+dotfiles=".vimrc"
 
 # variable of the path to the directory holding my dotfiles.
 dir="${HOME}/dotfiles"
