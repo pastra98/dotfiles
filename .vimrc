@@ -122,3 +122,12 @@ vnoremap <Space> zf
 " Automatically save and load folds
 autocmd BufWinLeave *.* mkview
 autocmd BufWinEnter *.* silent loadview" 
+
+
+" ----------------------------------------------------------------------------
+" Map ö to ecape
+noremap ö <ESC>
+inoremap ö <ESC>
+
+" turn on relative line numbers
+set relativenumber
