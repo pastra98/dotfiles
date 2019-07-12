@@ -1,1 +1,0 @@
-/home/pauls_big_pc_ubuntu/.vimrc
