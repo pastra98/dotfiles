@@ -56,7 +56,6 @@ set backspace=indent,eol,start
 set ttyfast
 
 
-
 " Status bar
 set laststatus=2
 
@@ -130,4 +129,4 @@ noremap ö <ESC>
 inoremap ö <ESC>
 
 " turn on relative line numbers
-set relativenumber
+" set relativenumber
