@@ -130,3 +130,10 @@ inoremap ö <ESC>
 
 " turn on relative line numbers
 " set relativenumber
+
+"send command to tmux pane
+map ää :!tmux send -t 1 "python3 %:p" "Enter" <ENTER> <ENTER>
+map ä2 :!tmux send -t 2 "python3 %:p" "Enter" <ENTER> <ENTER>
+map ä3 :!tmux send -t 3 "python3 %:p" "Enter" <ENTER> <ENTER>
+map ä4 :!tmux send -t 4 "python3 %:p" "Enter" <ENTER> <ENTER>
+map ä5 :!tmux send -t 5 "python3 %:p" "Enter" <ENTER> <ENTER>
