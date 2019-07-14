@@ -4,7 +4,7 @@
 # dotfiles variable.
 
 # all used dotfiles in one variable.
-dotfiles=".vimrc"
+dotfiles=(".vimrc" ".tmux.conf")
 
 # variable of the path where my dotfiles should be (home/usr)
 dir="${HOME}/${dotfiles}"
