@@ -84,7 +84,7 @@ set number
 
 
 " Set status line display
-set statusline=%F%m%r%h%w\ [FORMAT=%{&ff}]\ [TYPE=%Y]\ [POS=%l,%v][%p%%]\ [BUFFER=%n]\ %{strftime('%c')}
+SET STATusline=%F%m%r%h%w\ [FORMAT=%{&ff}]\ [TYPE=%Y]\ [POS=%l,%v][%p%%]\ [BUFFER=%n]\ %{strftime('%c')}
 
 
 
@@ -128,7 +128,7 @@ autocmd BufWinEnter *.* silent loadview"
 noremap ö <ESC>
 inoremap ö <ESC>
 
-" turn on relative line numbers
+" turn on relative line numbers -> to laggy
 " set relativenumber
 
 "send command to tmux pane
@@ -137,3 +137,5 @@ map ä2 :!tmux send -t 2 "python3 %:p" "Enter" <ENTER> <ENTER>
 map ä3 :!tmux send -t 3 "python3 %:p" "Enter" <ENTER> <ENTER>
 map ä4 :!tmux send -t 4 "python3 %:p" "Enter" <ENTER> <ENTER>
 map ä5 :!tmux send -t 5 "python3 %:p" "Enter" <ENTER> <ENTER>
+
+" colorscheme to be added
