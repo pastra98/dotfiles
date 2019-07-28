@@ -66,6 +66,7 @@ set smartcase
 
 " Map ö to ecape
 map ö <ESC>
+inoremap ö <ESC>
 
 " turn on relative line numbers -> to laggy
 set relativenumber
