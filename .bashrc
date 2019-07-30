@@ -57,7 +57,7 @@ if [ -n "$force_color_prompt" ]; then
 fi
 
 if [ "$color_prompt" = yes ]; then
-    PS1="\[\e[37;40m\]\u\[\e[m\]\[\e[36m\]@\[\e[m\]\[\e[36m\]\W\[\e[m\]: "
+    PS1="\[\e[31m\]\u\[\e[m\]\[\e[36m\]@\[\e[m\]\[\e[36m\]\W\[\e[m\]: "
 else
     PS1="\u@\W: \[$(tput sgr0)\]"
 fi
@@ -65,7 +65,7 @@ unset color_prompt force_color_prompt
 
 case "$TERM" in
 xterm*|rxvt*)
-    PS1="\[\e[37;40m\]\u\[\e[m\]\[\e[36m\]@\[\e[m\]\[\e[36m\]\W\[\e[m\]: "
+    PS1="\[\e[31m\]\u\[\e[m\]\[\e[36m\]@\[\e[m\]\[\e[36m\]\W\[\e[m\]: "
     ;;
 *)
     ;;
