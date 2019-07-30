@@ -10,3 +10,6 @@ dotfiles=(".vimrc" ".tmux.conf" ".bashrc")
 for dotfile in "${dotfiles[@]}";do
  ln -sf "${HOME}/dotfiles/${dotfile}" "${HOME}"
 done
+
+# adds a link for nvim config it's standard dir
+ln -sf "${HOME}/dotfiles/init.vim" "${HOME}/.config/nvim"
