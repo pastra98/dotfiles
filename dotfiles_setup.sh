@@ -4,10 +4,7 @@
 # dotfiles variable.
 
 # all used dotfiles in one variable.
-dotfiles=(".vimrc" ".tmux.conf")
-
-# variable of the path where my dotfiles should be (home/usr)
-dir="${HOME}/${dotfiles}"
+dotfiles=(".vimrc" ".tmux.conf" ".bashrc")
 
 # loops through listed dotfiles from var, and links it to the home directory where it belongs.
 for dotfile in "${dotfiles[@]}";do
