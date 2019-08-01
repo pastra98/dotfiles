@@ -11,7 +11,8 @@ syntax on
 set wrap
 
 
-" Uncomment below to set the max textwidth. Use a value corresponding to the width of your screen.
+" Uncomment below to set the max textwidth. Use a value corresponding 
+" to the width of your screen.
 set textwidth=79
 set formatoptions=tcqrn1
 set tabstop=2
@@ -68,15 +69,15 @@ set smartcase
 map ö <ESC>
 inoremap ö <ESC>
 
-" turn on relative line numbers -> to laggy
+" turn on relative line numbers
 set relativenumber
 
 "send command to tmux pane
-map ää :!tmux send -t 0 "python3 %:p" "Enter" <ENTER> 
-map ä1 :!tmux send -t 1 "python3 %:p" "Enter" <ENTER> 
-map ä2 :!tmux send -t 2 "python3 %:p" "Enter" <ENTER> 
-map ä3 :!tmux send -t 3 "python3 %:p" "Enter" <ENTER> 
-map ä4 :!tmux send -t 4 "python3 %:p" "Enter" <ENTER> 
+map ää :w <bar> !tmux send -t 0 "printf '\n' && python3 %:p && printf '\n'" "Enter" <Enter> 
+map ä1 :w <bar> !tmux send -t 0 "printf '\n' && python3 %:p && printf '\n'" "Enter" <Enter> 
+map ä2 :w <bar> !tmux send -t 0 "printf '\n' && python3 %:p && printf '\n'" "Enter" <Enter> 
+map ä3 :w <bar> !tmux send -t 0 "printf '\n' && python3 %:p && printf '\n'" "Enter" <Enter> 
+map ä4 :w <bar> !tmux send -t 0 "printf '\n' && python3 %:p && printf '\n'" "Enter" <Enter> 
 
 " colorscheme to be added
 colorscheme delek
