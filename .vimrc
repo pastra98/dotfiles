@@ -72,10 +72,14 @@ inoremap ö <ESC>
 set relativenumber
 
 "send command to tmux pane
-map ää :!tmux send -t 0 "python3 %:p" "Enter" <ENTER> <ENTER>
-map ä1 :!tmux send -t 1 "python3 %:p" "Enter" <ENTER> <ENTER>
-map ä2 :!tmux send -t 2 "python3 %:p" "Enter" <ENTER> <ENTER>
-map ä3 :!tmux send -t 3 "python3 %:p" "Enter" <ENTER> <ENTER>
-map ä4 :!tmux send -t 4 "python3 %:p" "Enter" <ENTER> <ENTER>
+map ää :!tmux send -t 0 "python3 %:p" "Enter" <ENTER> 
+map ä1 :!tmux send -t 1 "python3 %:p" "Enter" <ENTER> 
+map ä2 :!tmux send -t 2 "python3 %:p" "Enter" <ENTER> 
+map ä3 :!tmux send -t 3 "python3 %:p" "Enter" <ENTER> 
+map ä4 :!tmux send -t 4 "python3 %:p" "Enter" <ENTER> 
 
 " colorscheme to be added
+colorscheme delek
+
+" 80 char limit
+set colorcolumn=72
