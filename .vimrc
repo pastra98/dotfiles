@@ -2,7 +2,6 @@
 set nocompatible
 
 
-
 " Turn on syntax highlighting.
 syntax on
 
@@ -11,8 +10,7 @@ syntax on
 set wrap
 
 
-" Uncomment below to set the max textwidth. Use a value corresponding 
-" to the width of your screen.
+" Formatting Options for python
 set textwidth=79
 set formatoptions=tcqrn1
 set tabstop=2
@@ -78,9 +76,19 @@ map ä1 :w <bar> !tmux send -t 0 "printf '\n' && python3 %:p && printf '\n'" "En
 map ä2 :w <bar> !tmux send -t 0 "printf '\n' && python3 %:p && printf '\n'" "Enter" <Enter> 
 map ä3 :w <bar> !tmux send -t 0 "printf '\n' && python3 %:p && printf '\n'" "Enter" <Enter> 
 map ä4 :w <bar> !tmux send -t 0 "printf '\n' && python3 %:p && printf '\n'" "Enter" <Enter> 
+map äö :w <bar> !tmux send -t 0 "python %" "Enter" <Enter> <Enter>
+map äü :!tmux respawn-pane -k -t0 && tmux send -t0 "cmd.exe" "Enter" <Enter> <Enter>
+
 
 " colorscheme to be added
 colorscheme delek
 
 " 80 char limit
 set colorcolumn=72
+
+" bitch-ass automcomplete rekt my shit
+set signcolumn=no
+
+" set buffers hidden, so I don't have to save every bn
+set hidden
+
