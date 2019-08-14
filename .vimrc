@@ -83,6 +83,9 @@ map äü :!tmux respawn-pane -k -t0 && tmux send -t0 "cmd.exe" "Enter" <Enter> <
 " colorscheme to be added
 colorscheme delek
 
+" change line number color
+highlight CursorLineNr ctermfg=blue
+
 " 80 char limit
 set colorcolumn=72
 
