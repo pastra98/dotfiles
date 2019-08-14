@@ -2,18 +2,31 @@ set runtimepath^=~/.vim runtimepath+=~/.vim/after
 let &packpath = &runtimepath
 source ~/.vimrc
 
+
+" something something autocomplete
+" autocmd FileType python set completeopt-=preview
+
+" use <tab> for trigger completion and navigate to the next complete item
+function! s:check_back_space() abort
+  let col = col('.') - 1
+  return !col || getline('.')[col - 1]  =~ '\s'
+endfunction
+
+inoremap <silent><expr> <Tab>
+      \ pumvisible() ? "\<C-n>" :
+      \ <SID>check_back_space() ? "\<Tab>" :
+      \ coc#refresh()
+
 call plug#begin()
-Plug 'Shougo/deoplete.nvim', { 'do': ':UpdateRemotePlugins' }
-Plug 'Shougo/echodoc.vim'
+Plug 'neoclide/coc.nvim', {'branch': 'release'}
 call plug#end()
 
-set cmdheight=2 " this is for deoplete compatability
+nnoremap <silent> <c-space> :call <SID>show_documentation()<CR>
 
-let g:deoplete#enable_at_startup = 1
-let g:echodoc#enable_at_startup = 1
-let g:echodoc#type = "echo"
-
-call deoplete#custom#option('auto_complete', v:false)
-call deoplete#custom#option('manual_complete', v:true)
-" map ctrl n to deoplete complete instead of vim's
-inoremap <expr> <C-n>  deoplete#manual_complete()
+function! s:show_documentation()
+  if (index(['vim','help'], &filetype) >= 0)
+    execute 'h '.expand('<cword>')
+  else
+    call CocAction('doHover')
+  endif
+endfunction
