@@ -19,6 +19,7 @@ inoremap <silent><expr> <Tab>
 
 call plug#begin()
 Plug 'neoclide/coc.nvim', {'branch': 'release'}
+Plug 'tpope/vim-obsession'
 call plug#end()
 
 nnoremap <silent> <c-space> :call <SID>show_documentation()<CR>
