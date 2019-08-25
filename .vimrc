@@ -88,6 +88,7 @@ highlight CursorLineNr ctermfg=blue
 
 " 80 char limit
 set colorcolumn=72
+highlight ColorColumn ctermbg=7
 
 " bitch-ass automcomplete rekt my shit
 set signcolumn=no
