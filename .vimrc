@@ -77,7 +77,7 @@ map ä2 :w <bar> !tmux send -t 0 "printf '\n' && python3 %:p && printf '\n'" "En
 map ä3 :w <bar> !tmux send -t 0 "printf '\n' && python3 %:p && printf '\n'" "Enter" <Enter> 
 map ä4 :w <bar> !tmux send -t 0 "printf '\n' && python3 %:p && printf '\n'" "Enter" <Enter> 
 map äö :w <bar> !tmux send -t 0 "python %" "Enter" <Enter> <Enter>
-map äü :!tmux respawn-pane -k -t0 && tmux send -t0 "cmd.exe" "Enter" <Enter> <Enter>
+map äü :!tmux respawn-pane -k -t0 && tmux send -t0 "cd $PWD" "Enter" && tmux send -t0 "cmd.exe" "Enter" <Enter> <Enter>
 
 
 " colorscheme to be added
