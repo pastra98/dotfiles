@@ -79,6 +79,8 @@ map ä4 :w <bar> !tmux send -t 0 "printf '\n' && python3 %:p && printf '\n'" "En
 map äö :w <bar> !tmux send -t 0 "python %" "Enter" <Enter> <Enter>
 map äü :!tmux respawn-pane -k -t0 && tmux send -t0 "cd $PWD" "Enter" && tmux send -t0 "cmd.exe" "Enter" <Enter> <Enter>
 
+" map - to going to the middle of the line
+nmap - :call cursor(0, len(getline('.'))/2) <Enter>
 
 " colorscheme to be added
 colorscheme delek
