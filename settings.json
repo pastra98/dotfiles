@@ -1,0 +1,12 @@
+{
+    "vim.insertModeKeyBindings": [
+        {
+            "before": ["ö"],
+            "after": ["<Esc>", "l"]
+        }
+    ],
+    "editor.cursorBlinking": "solid",
+    "editor.minimap.enabled": false,
+    "editor.lineNumbers": "relative",
+    "workbench.colorTheme": "Default Light+"
+}
