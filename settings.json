@@ -5,6 +5,7 @@
             "after": ["<Esc>", "l"]
         }
     ],
+    "editor.rulers": [80,120],
     "editor.cursorBlinking": "solid",
     "editor.minimap.enabled": false,
     "editor.lineNumbers": "relative",
