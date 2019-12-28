@@ -9,5 +9,6 @@
     "editor.cursorBlinking": "solid",
     "editor.minimap.enabled": false,
     "editor.lineNumbers": "relative",
-    "workbench.colorTheme": "Default Light+"
+    "workbench.colorTheme": "Default Light+",
+    "zenMode.hideLineNumbers": false
 }
