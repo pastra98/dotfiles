@@ -10,5 +10,6 @@
     "editor.minimap.enabled": false,
     "editor.lineNumbers": "relative",
     "workbench.colorTheme": "Default Light+",
-    "zenMode.hideLineNumbers": false
+    "zenMode.hideLineNumbers": false,
+    "editor.hover.delay": 3000
 }
